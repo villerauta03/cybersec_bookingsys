@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/888027a4-5b1e-4c4e-a8d1-1823a2ea4ed5)# Testing report 15-03-2025
+# Testing report 15-03-2025
 The initial results of testing were about the same as with Phase 1 Part 2, Zaproxy was not able to find any glaring errors in the program. After running "whatweb http://localhost:8000" I was able to confirm that there is now a Content Security Policy in place to protect against XSS attacks, X-Content-Type-Options against MIME-sniffing, and X-Frame-Options:DENY to stop clickjacking. gobuster only found open endpoints in /login and /register so there is no instant glaring error in an open admin panel. The email field is also being validated properly to only accept email addresses so it is not vulnerable to SQL Injection. I was able to make the password into an SQL statement, but trying to implement SQL Injection through the password didn't work, so I can assume there is some level of password validation.  
 Running sqlmap on level 5 risk 3 also returned: "[CRITICAL] all tested parameters do not appear to be injectable.", confirming no SQL injection on the login page.  
 

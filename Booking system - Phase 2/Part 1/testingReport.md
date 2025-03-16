@@ -11,17 +11,17 @@ For the other passwords, I bruteforced each one by one. Since I now knew the has
 I will list each password I found by bruteforcing, as well as the time it took to unhash them in the table below:
 | Email | Hashed Password | Unhashed Password | Time |
 |---|---|---|---|
-| darkknight@gothamwatch.com | 735f7f5e652d7697723893e1a5c04d90 | iamvengeance | 1 min |
-| chimichanga@fourthwall.com | 7cb56c2b86150b797cff32eaef97f338 | breaking4thwall | 7 min |
-| elementary@221bbaker.uk | 12c9cef0bfb6b91c42b363b4cf02d8bb | deduction221B | 20 min |
-| whysoserious@gothamchaos.net | f158d479ee181aac68b000a60e7a3d7a | chaos123! | 10 min |
-| quackattack@duckburg.org | ea261222d4867b3ebdfadbe2b35e19d5 | mickeyisjealous | 10 sec |
-| ruhroh@mysterymachine.com | ad17fbd845000b11678ccbf94e135b56 | snacks4scooby | 30 sec |
+| darkknight@gothamwatch.com | 735f7f5e652d7697723893e1a5c04d90 | iamvengeance | 10 sec |
+| chimichanga@fourthwall.com | 7cb56c2b86150b797cff32eaef97f338 | breaking4thwall | 1 sec |
+| elementary@221bbaker.uk | 12c9cef0bfb6b91c42b363b4cf02d8bb | deduction221B | 1 sec |
+| whysoserious@gothamchaos.net | f158d479ee181aac68b000a60e7a3d7a | chaos123! | 1 sec |
+| quackattack@duckburg.org | ea261222d4867b3ebdfadbe2b35e19d5 | mickeyisjealous | 1 sec |
+| ruhroh@mysterymachine.com | ad17fbd845000b11678ccbf94e135b56 | snacks4scooby | 11 sec |
 
 I did use the tips the teacher gave us on the ItsLearning platform for bruteforcing the passwords, as otherwise it could have taken days to crack some of the more complicated ones. This lead to the bruteforcing taking significantly shorter than it would have in a real situation, where I would not have had any help and would have had to wait for hashcat to slowly iterate over each combination.  
 Using hashcat mask attacks, I was able to unhash all of the other 6 passwords to complete the assignment.  
 
-*I did have some trouble trying to figure out how to run the hashcats so it would check for multiple things in the same character (like checking if a character is uppercase, then checking if the same character is lowercase, etc.) but I was able to figure out the command for it eventually (ex. hashcat -m 0 -a 3 hash.txt -1 ?u?l?s?d chaos?1?1?1!), which is why elementary@221bbaker.uk and whysoserious@gothamchaos.net took so long*
+*I did have some trouble trying to figure out how to run the hashcats so it would check for multiple things in the same character (like checking if a character is uppercase, then checking if the same character is lowercase, etc.) but I was able to figure out the command for it eventually (ex. hashcat -m 0 -a 3 hash.txt -1 ?u?l?s?d chaos?1?1?1!). The table lists how long it took for the hashcat command to find the passwords, not how long I personally took to figure out each command.*
 
 ### The complete table of all emails, hashed passwords, and unhashed passwords:
 | Email | Hashed Password | Unhashed Password | Cracking method |

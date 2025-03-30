@@ -24,6 +24,7 @@ The main steps of this exercise focus on checking authorization rules and protec
 | `/register` | ✅ | ✅ | ✅ |
 | └─ Create a user with "reserver" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | └─ Create a user with "administrator" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
+| `/logout` | ✅ | ✅ | ✅ |
 | `/api/users` |✅|✅|✅|
 | `/api/resources` |✅|✅|✅|
 | `/api/session` |❌|✅|✅|

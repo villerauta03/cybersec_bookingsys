@@ -105,3 +105,5 @@ Filtered Requests: 4611
 Requests/sec.: 0
 ```
 Aside from `/api/users` and `/api/resources`, we were able to find a third one, `/api/session`. It is viewable to both administrators and reservers, but not to guest users. It will return an "Unauthorized access" if someone not logged in tries to enter. I'm assuming this is because it returns the session of the current logged user, which cannot exist unless the user in question is logged in.
+
+In the entirety of the application, no commands or pen testing applications were able to find any other sites, like an admin panel or deleting a reserver.

@@ -38,7 +38,7 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | `/login` | ✅ | ✅ | ✅ |
 | └─ Login as "reserver" user | ✅ | ✅ | ✅ |
 | └─ Login as "administrator" user | ✅ | ✅ | ✅ |
-| `/register` | ✅ | ✅ | ✅ |
+| `/register` | ✅ | ✅ | ✅ * Admin user must have password longer than 8 characters |
 | └─ Create a user with "reserver" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | └─ Create a user with "administrator" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | `/logout` | ✅ | ✅ | ✅ |

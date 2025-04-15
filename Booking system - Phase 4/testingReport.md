@@ -26,13 +26,13 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | └─ Viewing reservations | ✅ | ✅ | ✅ |
 | └─ Viewing the emails of users who made the reservations | ❌ | ✅ | ✅ |
 | `/reservation` | ❌ | ✅ | ✅ |
-| └─ Creating a reservation | ❌ | ✅ * Only if the user's date of birth is 15 years or older | ✅ |
+| └─ Creating a reservation | ❌ | ✅ * Reservation end date cannot be later than reservation start date | ✅ |
 | `/reservation?id=` (individual reservation page)| ❌| ✅ | ✅ |
 | └─ Edit own reservation | ❌ | ✅ | ✅ |
 | └─ Edit others' reservations | ❌ | ✅ (access through address bar) | ✅ |
-| `/resources`| ✅ (through address bar) | ✅ | ✅ |
-| └─ Creating a resource | ✅ | ✅ | ✅ |
-| `/resources?id=` (individual resource page) | ❌ (redirects to resource creation) | ✅ | ✅ |
+| `/resources`| ❌ | ✅ | ✅ |
+| └─ Creating a resource | ❌ | ✅ | ✅ |
+| `/resources?id=` (individual resource page) | ❌ | ✅ | ✅ |
 | └─ Edit own resource | ❌ | ✅ | ✅ |
 | └─ Edit other's resource | ❌ | ✅ (access through address bar) | ✅ |
 | `/login` | ✅ | ✅ | ✅ |
@@ -42,8 +42,8 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | └─ Create a user with "reserver" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | └─ Create a user with "administrator" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | `/logout` | ✅ | ✅ | ✅ |
-| `/api/users` |✅|✅|✅|
-| `/api/resources` |✅|✅|✅|
+| `/api/users` |❌|✅|✅|
+| `/api/resources` |❌|✅|✅|
 | `/api/session` |❌|✅|✅|
 
 

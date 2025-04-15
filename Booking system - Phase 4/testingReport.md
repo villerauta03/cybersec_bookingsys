@@ -19,7 +19,7 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 9. The client, your company, requires that the system complies with GDPR regulations.  
 10. The system provider has stated that the software is developed following the Privacy by Design (PbD) principle.  
 
-## The Authorization Table of the Application (for reference from Booking System Project Phase 3)
+## The Authorization Table of the Application (updated from Phase 3)
 | **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
 |:----|:----:|:----:|:----:|
 | `/` (index)                |✅| ✅ | ✅ |

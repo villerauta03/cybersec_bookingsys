@@ -29,18 +29,18 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | └─ Creating a reservation | ❌ | ✅ * Reservation end date cannot be later than reservation start date | ✅ |
 | `/reservation?id=` (individual reservation page)| ❌| ✅ | ✅ |
 | └─ Edit own reservation | ❌ | ✅ | ✅ |
-| └─ Edit others' reservations | ❌ | ✅ (access through address bar) | ✅ |
+| └─ Edit others' reservations | ❌ | ✅ | ✅ |
 | `/resources`| ❌ | ✅ | ✅ |
 | └─ Creating a resource | ❌ | ✅ | ✅ |
 | `/resources?id=` (individual resource page) | ❌ | ✅ | ✅ |
 | └─ Edit own resource | ❌ | ✅ | ✅ |
-| └─ Edit other's resource | ❌ | ✅ (access through address bar) | ✅ |
+| └─ Edit other's resource | ❌ | ✅ | ✅ |
 | `/login` | ✅ | ✅ | ✅ |
 | └─ Login as "reserver" user | ✅ | ✅ | ✅ |
 | └─ Login as "administrator" user | ✅ | ✅ | ✅ |
-| `/register` | ✅ | ✅ | ✅ * Admin user must have password longer than 8 characters |
-| └─ Create a user with "reserver" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
-| └─ Create a user with "administrator" role | ✅ | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
+| `/register` | ✅ | ✅ | ✅ |
+| └─ Create a user with "reserver" role | ✅ * User password must be longer than 8 characters | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
+| └─ Create a user with "administrator" role | ✅ * User password must be longer than 8 characters | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
 | `/logout` | ✅ | ✅ | ✅ |
 | `/api/users` |❌|✅|✅|
 | `/api/resources` |❌|✅|✅|

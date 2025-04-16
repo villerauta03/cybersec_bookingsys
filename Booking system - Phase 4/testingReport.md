@@ -26,7 +26,7 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | └─ Viewing reservations | ✅ | ✅ | ✅ |
 | └─ Viewing the emails of users who made the reservations | ❌ | ✅ | ✅ |
 | `/reservation` | ❌ | ✅ | ✅ |
-| └─ Creating a reservation | ❌ | ✅ * Reservation end date cannot be later than reservation start date | ✅ |
+| └─ Creating a reservation | ❌ | ✅ * Reservation end date cannot be later than reservation start date | ✅ * Reservation end date cannot be later than reservation start date |
 | `/reservation?id=` (individual reservation page)| ❌| ✅ | ✅ |
 | └─ Edit own reservation | ❌ | ✅ | ✅ |
 | └─ Edit others' reservations | ❌ | ✅ | ✅ |
@@ -39,12 +39,16 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | └─ Login as "reserver" user | ✅ | ✅ | ✅ |
 | └─ Login as "administrator" user | ✅ | ✅ | ✅ |
 | `/register` | ✅ | ✅ | ✅ |
-| └─ Create a user with "reserver" role | ✅ * User password must be longer than 8 characters | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
-| └─ Create a user with "administrator" role | ✅ * User password must be longer than 8 characters | ❌`Invalid CSRF Token` | ❌`Invalid CSRF Token` |
+| └─ Create a user with "reserver" role | ✅ * User password must be longer than 8 characters | ✅ (Sometimes `Invalid CSRF Token` but must intentionally try to achieve it) | ✅ (Sometimes `Invalid CSRF Token` but must intentionally try to achieve it) |
+| └─ Create a user with "administrator" role | ✅ * User password must be longer than 8 characters | ✅ (Sometimes `Invalid CSRF Token` but must intentionally try to achieve it) | ✅ (Sometimes `Invalid CSRF Token` but must intentionally try to achieve it) |
+| `/account` | ✅ | ✅ | ✅ |
+| └─ Logout with the "Log out"-button | ✅ | ✅ | ✅ |
 | `/logout` | ✅ | ✅ | ✅ |
 | `/api/users` |❌|✅|✅|
 | `/api/resources` |❌|✅|✅|
 | `/api/session` |❌|✅|✅|
+| `/api/reservations` |✅|✅|✅|
+| `/api/account` |❌|✅|✅|
 
 
 # GDPR Compliance Checklist – Web-based Booking System

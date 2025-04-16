@@ -44,6 +44,9 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 | `/account` | ✅ | ✅ | ✅ |
 | └─ Logout with the "Log out"-button | ✅ | ✅ | ✅ |
 | `/logout` | ✅ | ✅ | ✅ |
+| `/privacypolicy` | ✅ | ✅ | ✅ |
+| `/cookiepolicy` | ✅ | ✅ | ✅ |
+| `/terms` | ✅ | ✅ | ✅ |
 | `/api/users` |❌|✅|✅|
 | `/api/resources` |❌|✅|✅|
 | `/api/session` |❌|✅|✅|
@@ -55,15 +58,15 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 
 | **Result** | **Personal data mapping and minimization** |
 | :----: | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Have all personal data collected and processed in the system been<br> identified? (e.g., name, email, age, username) |
-| &nbsp;✅/❌/⚠️&nbsp; | Have you ensured that only necessary personal data is collected (data minimization)? |
-| &nbsp;✅/❌/⚠️&nbsp; | Is user age recorded to verify that the booker is over 15 years old? |
+| &nbsp;✅ / ⚠️email and password are collected and saved &nbsp; | Have all personal data collected and processed in the system been<br> identified? (e.g., name, email, age, username) |
+| &nbsp;✅&nbsp; | Have you ensured that only necessary personal data is collected (data minimization)? |
+| &nbsp;✅ /⚠️ The user age is checked but not saved &nbsp; | Is user age recorded to verify that the booker is over 15 years old? |
 
 ---
 
 | **Result** | **User registration and management** |
 | :----: | :--- |
-| &nbsp;✅/❌/⚠️&nbsp; | Does the registration form (page) include GDPR-compliant consent for processing<br> personal data (e.g., acceptance of the privacy policy)?|
+| &nbsp;❌ /⚠️ The page exists but no policy is written there &nbsp; | Does the registration form (page) include GDPR-compliant consent for processing<br> personal data (e.g., acceptance of the privacy policy)?|
 | &nbsp;✅/❌/⚠️&nbsp; | Can users view, edit, and delete their own personal data via their account? |
 | &nbsp;✅/❌/⚠️&nbsp; | Is there a mechanism for the administrator to delete a reserver in<br> accordance with the "right to be forgotten"? |
 | &nbsp;✅/❌/⚠️&nbsp; | Is underage registration (under 15 years) and booking functionality restricted? |

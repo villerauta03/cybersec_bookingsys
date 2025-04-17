@@ -26,7 +26,10 @@ We started testing the application by first going over the Phase 3 authorization
 
 📌 [GDPR checklist](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/gdpr_checklist.md)
 
-To find new pages within the application, we ran a zaproxy test (which also helped us find the answers to some of the GDPR table questions) at https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/2025-04-16-ZAP-Report-.md including a spider and an AJAX spider.
+To find new pages within the application, we ran a zaproxy test (which also helped us find the answers to some of the GDPR table questions), including a spider and an AJAX spider.
+
+📌 [Zaproxy Report](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/2025-04-16-ZAP-Report-.md)
+
 We also ran a wfuzz command against the common wordlist to check for any pages and api calls. We were able to find `/api/users` and `/api/account` this way. 
 For SQL Injection testing we used sqlmap and we checked the request and response headers with Burp suite to check for CSRF protections.
 

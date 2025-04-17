@@ -5,7 +5,7 @@
 **Application Name**: Booking System Project 
 **Provider**: Centria UAS
 
-These Terms of Service ("Terms") govern your access to and use of our application. By using the application, you agree to be bound by these Terms and our [Privacy Policy](/privacypolicy) and [Cookie Policy](/cookiepolicy).
+These Terms of Service ("Terms") govern your access to and use of our application. By using the application, you agree to be bound by these Terms and our [Privacy Policy](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/privacypolicy.md) and [Cookie Policy](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/cookiepolicy.md).
 
 ---
 
@@ -47,7 +47,7 @@ Reservation data is partially visible to all users, but only logged-in users can
 
 Your data is processed in accordance with the **[EU GDPR]**, and the system is developed following the **Privacy by Design** principle.
 
-See our [Privacy Policy](/privacypolicy) for full details on how your data is handled, and your rights under GDPR.
+See our [Privacy Policy](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/privacypolicy.md) for full details on how your data is handled, and your rights under GDPR.
 
 ---
 

@@ -20,7 +20,7 @@ In addition, if they do not exist within the appropriate filepaths, we are to de
 10. The system provider has stated that the software is developed following the Privacy by Design (PbD) principle.  
 
 ## Documentation of the testing process
-We started testing the application by first going over the Phase 3 authorization table, and updating it through testing the application. We went to each page in the autrhorization table and checked the functionalities, and updated the table as needed. We then proceeded to add the new pages in the application to the table and checked each of the functionalities present in them. We noted things such as the code throwing an error if the user tries to register an account under 15 years old and a password less than 8 characters.
+We started testing the application by first going over the Phase 3 authorization table, and updating it through testing the application. We went to each page in the authorization table and checked the functionalities, and updated the table as needed. We then proceeded to add the new pages in the application to the table and checked each of the functionalities present in them. We noted things such as the code throwing an error if the user tries to register an account under 15 years old and a password less than 8 characters.
 
 To find new pages within the application, we ran a zaproxy test (which also helped us find the answers to some of the GDPR table questions) at https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/2025-04-16-ZAP-Report-.md including a spider and an AJAX spider.
 We also ran a wfuzz command against the common wordlist to check for any pages and api calls. We were able to find `/api/users` and `/api/account` this way. 
@@ -28,6 +28,12 @@ For SQL Injection testing we used sqlmap and we checked the request and response
 
 We were not able to discover any admin panel or anything of the sort.
 
+After the initial exploration of the service, we completed the second part of the assignment, which is creating the cookie policy, terms of service, and privacy policy of the application. We have compiled each into their own .md files in this folder. 
+- [Terms of Service](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/termsofservice.md)
+- [Privacy Policy](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/privacypolicy.md)
+- [Cookie Policy](https://github.com/villerauta03/cybersec_bookingsys/blob/main/Booking%20system%20-%20Phase%204/cookiepolicy.md)
+
+  
 ## The Authorization Table of the Application (updated from Phase 3)
 | **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
 |:----|:----:|:----:|:----:|
@@ -63,7 +69,7 @@ We were not able to discover any admin panel or anything of the sort.
 | `/api/account` |❌|✅|✅|
 
 
-# GDPR Compliance Checklist – Web-based Booking System
+## GDPR Compliance Checklist – Web-based Booking System
 
 | **Result** | **Personal data mapping and minimization** |
 | :----: | :--- |
